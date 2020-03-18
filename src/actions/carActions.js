@@ -1,8 +1,10 @@
+//  Action Types help us identify errors
 export const REMOVE_FEATURE = 'REMOVE_FEATURE';
 export const BUY_ITEM = 'BUY_ITEM';
 
-// action creator
+// Action Creator
 export const removeFeature = feature => {
+  // Action
   return { type: REMOVE_FEATURE, payload: feature };
 };
 

@@ -2,7 +2,7 @@
 import { REMOVE_FEATURE, BUY_ITEM } from '../actions/carActions'
 // import actions
 
-
+//  Initial State
 export const initialState = {
   additionalPrice: 0,
   car: {
@@ -23,7 +23,10 @@ export const initialState = {
 // default parameters
 export const carReducer = (state = initialState, action) => {
   console.log('aaaaaaaaaa', state, action);
+  // Similiar to if / if else / else but without the mess
+  // Passing type into action
   switch (action.type) {
+    // Handling actions
     case BUY_ITEM:
       return {
         ...state,
