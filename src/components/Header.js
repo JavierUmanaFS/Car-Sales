@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+// Connecting component to Redux store
 
 const Header = props => {
   return (
@@ -11,5 +13,6 @@ const Header = props => {
     </>
   );
 };
+
 
 export default Header;
